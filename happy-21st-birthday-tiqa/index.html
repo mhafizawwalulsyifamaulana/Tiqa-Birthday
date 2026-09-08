@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#9fd8f7">
+  <meta name="description" content="A little digital world made just for Tiqa — Happy 21st Birthday.">
+  <title>Happy 21st Birthday, Tiqa.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true"></div>
+  <div class="bg-overlay" aria-hidden="true"></div>
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+  <div class="start-gate" id="startGate">
+    <div class="start-card glass">
+      <span class="eyebrow">A small surprise</span>
+      <h2>For Tiqa.</h2>
+      <p>Tap once to begin the story.</p>
+      <button class="primary-btn" id="startBtn">Tap to Begin <span>✦</span></button>
+    </div>
+  </div>
+
+  <button class="audio-fab" id="audioToggle" aria-label="Putar atau jeda musik" title="Play / Pause">
+    <span class="audio-icon">♫</span>
+  </button>
+
+  <main>
+    <section class="hero section" id="opening">
+      <div class="hero-content reveal">
+        <p class="eyebrow">09 · 09 · 2026</p>
+        <h1>Happy 21st<br><em>Birthday, Tiqa.</em></h1>
+        <p class="date">Wednesday, 9 September 2026</p>
+        <p class="lead">A little something made just for you.</p>
+        <a class="scroll-cta" href="#message">Begin the story <span>↓</span></a>
+      </div>
+    </section>
+
+    <section class="section narrow" id="message">
+      <div class="section-heading reveal">
+        <span class="eyebrow">01 / A beginning</span>
+        <h2>Untuk Tiqa</h2>
+      </div>
+      <div class="letter glass reveal">
+        <p>Hari ini bukan hanya tentang bertambahnya satu angka. Ini tentang semua hal yang sudah kamu lewati, semua versi dirimu yang pernah tumbuh, dan semua hal baik yang masih menunggumu di depan.</p>
+        <p>Di usia dua puluh satu, semoga kamu tidak merasa harus memiliki semuanya sekaligus. Semoga kamu bisa berjalan dengan ritmemu sendiri, mengenal dirimu lebih dalam, dan tetap menyimpan ruang untuk hal-hal sederhana yang membuat hidup terasa berarti.</p>
+        <p>Ini hanya sebuah halaman kecil, tapi dibuat dengan satu niat sederhana: mengingatkanmu bahwa keberadaanmu layak dirayakan.</p>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="portraits">
+      <div class="section-heading reveal">
+        <span class="eyebrow">02 / Portraits</span>
+        <h2>The Girl in Every Frame</h2>
+        <p>Tiga frame, tiga cara kecil untuk melihat keindahan yang hadir tanpa perlu dibuat-buat.</p>
+      </div>
+      <div class="portrait-grid">
+        <figure class="photo-card portrait-card reveal">
+          <img src="images/portrait-1.jpg" alt="Portrait Tiqa pertama" loading="lazy">
+          <figcaption>“Lihatlah, betapa indahnya dirimu.”</figcaption>
+        </figure>
+        <figure class="photo-card portrait-card reveal">
+          <img src="images/portrait-2.jpg" alt="Portrait Tiqa kedua" loading="lazy">
+          <figcaption>“Ada sesuatu dalam senyummu yang selalu membuat hari terasa lebih ringan.”</figcaption>
+        </figure>
+        <figure class="photo-card portrait-card reveal">
+          <img src="images/portrait-3.jpg" alt="Portrait Tiqa ketiga" loading="lazy">
+          <figcaption>“Tidak semua keindahan membutuhkan perhatian. Sebagian hanya hadir dengan tenang.”</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="landscapes">
+      <div class="section-heading reveal">
+        <span class="eyebrow">03 / Little moments</span>
+        <h2>Moments Worth Keeping</h2>
+        <p>Karena beberapa kenangan terasa lebih baik ketika dibiarkan tinggal sedikit lebih lama.</p>
+      </div>
+      <div class="landscape-grid">
+        <figure class="wide-card reveal">
+          <img src="images/landscape-1.jpg" alt="Momen Tiqa pertama" loading="lazy">
+          <figcaption>Hal-hal sederhana yang akhirnya menjadi kenangan.</figcaption>
+        </figure>
+        <figure class="wide-card reveal">
+          <img src="images/landscape-2.jpg" alt="Momen Tiqa kedua" loading="lazy">
+          <figcaption>Waktu berjalan, tetapi beberapa rasa tetap tinggal.</figcaption>
+        </figure>
+        <figure class="wide-card reveal">
+          <img src="images/landscape-3.jpg" alt="Momen Tiqa ketiga" loading="lazy">
+          <figcaption>Untuk hari-hari yang suatu saat akan kita rindukan.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section split-section" id="about">
+      <div class="section-heading reveal">
+        <span class="eyebrow">04 / A little story</span>
+        <h2>A Little Story About You</h2>
+      </div>
+      <div class="story-copy reveal">
+        <p>Menjadi anak tengah dari tiga bersaudara mungkin membuat perjalananmu memiliki tempat yang sedikit berbeda di dalam keluarga. Bukan selalu menjadi yang pertama, bukan pula yang terakhir—tetapi punya ruang sendiri untuk menemukan cara berjalanmu.</p>
+        <p>Dan mungkin justru di sana ada sesuatu yang menarik tentangmu: banyak sisi yang bisa ditemukan pelan-pelan. Kamu hebat dengan caramu sendiri, kuat ketika keadaan memintamu untuk bertahan, cerdas dalam melihat sesuatu dari sudut yang mungkin tidak semua orang lihat, dan unik tanpa harus berusaha menjadi berbeda.</p>
+        <p>Semoga kamu terus menjaga sisi-sisi baik itu. Bukan untuk memenuhi ekspektasi siapa pun, tetapi karena semuanya adalah bagian dari dirimu yang membuat perjalanan ini layak untuk dijalani.</p>
+      </div>
+    </section>
+
+    <section class="age-section section" id="twentyone">
+      <div class="age-content reveal">
+        <span class="eyebrow">05 / A new chapter</span>
+        <div class="age-number">21</div>
+        <h2>Twenty-one looks beautiful on you.</h2>
+        <p>Semoga masa depan datang bukan sebagai sesuatu yang harus kamu takuti, melainkan ruang luas untuk mencoba, gagal, belajar, dan menemukan apa yang benar-benar kamu inginkan.</p>
+        <p>Semoga impianmu punya jalan untuk tumbuh. Semoga keberanianmu selalu lebih besar dari keraguanmu. Semoga pertumbuhanmu terasa lembut, dan di tengah semua kesibukan menjadi dewasa, kamu tetap menemukan ketenangan.</p>
+        <p>Dan semoga di setiap bab berikutnya, kamu dikelilingi orang-orang baik—mereka yang hadir untuk mendukung, menghargai, dan mengingatkanmu bahwa kamu tidak harus menjalani semuanya sendirian.</p>
+      </div>
+    </section>
+
+    <section class="section title-section" id="tuan-putri">
+      <div class="subtle-callout glass reveal">
+        <span class="eyebrow">06 / A small name</span>
+        <p class="callout-line">“Ada satu panggilan yang mungkin tidak semua orang tahu.”</p>
+        <h2>Tuan Putri.</h2>
+        <p>Sebuah panggilan personal yang punya tempat kecil tersendiri ketika digunakan untuk Tiqa—cukup sederhana, cukup personal, dan tidak perlu dijelaskan terlalu jauh.</p>
+      </div>
+    </section>
+
+    <section class="section poem-section" id="poem">
+      <div class="section-heading reveal">
+        <span class="eyebrow">07 / A letter turned into words</span>
+        <h2>A Letter Turned Into A Poem</h2>
+      </div>
+      <article class="poem glass reveal">
+        <p>Tiqa,<br>
+        dua puluh satu datang<br>
+        tidak dengan suara yang besar,<br>
+        hanya satu halaman baru<br>
+        yang perlahan terbuka.</p>
+        <p>Di belakangmu,<br>
+        ada banyak hari yang sudah berhasil kamu lewati.<br>
+        Ada hal-hal yang mungkin tidak mudah,<br>
+        ada versi dirimu yang pernah lelah,<br>
+        dan ada kekuatan yang mungkin baru kamu sadari<br>
+        setelah semuanya berlalu.</p>
+        <p>Sebagai anak tengah,<br>
+        kamu tumbuh di antara banyak cerita,<br>
+        lalu menemukan ceritamu sendiri.<br>
+        Tidak harus paling keras,<br>
+        tidak harus paling terlihat—<br>
+        cukup menjadi seseorang<br>
+        yang tahu kapan harus bertahan<br>
+        dan kapan harus memberi dirinya ruang.</p>
+        <p>Kecerdasanmu bukan hanya tentang apa yang kamu tahu.<br>
+        Kekuatanmu bukan hanya tentang apa yang sanggup kamu tahan.<br>
+        Dan indahmu bukan hanya tentang apa yang terlihat.</p>
+        <p>Semoga setelah angka dua puluh satu,<br>
+        hidup memberimu lebih banyak pagi<br>
+        yang terasa ringan,<br>
+        lebih banyak mimpi<br>
+        yang menemukan jalannya,<br>
+        dan lebih banyak alasan<br>
+        untuk tersenyum tanpa alasan.</p>
+        <p>Kalau suatu hari langkahmu terasa jauh,<br>
+        semoga kamu tetap ingat:<br>
+        kamu sedang tumbuh,<br>
+        bukan tertinggal.</p>
+        <p>Dan untuk halaman-halaman yang belum tertulis—<br>
+        semoga semuanya membawa kamu<br>
+        semakin dekat<br>
+        kepada hidup yang kamu pilih sendiri.</p>
+        <p class="poem-signoff">Untukmu,<br>di usia dua puluh satu.</p>
+      </article>
+    </section>
+
+    <section class="section music-section" id="music">
+      <div class="section-heading reveal">
+        <span class="eyebrow">08 / A song for the moment</span>
+        <h2>Press play.</h2>
+      </div>
+      <div class="music-player glass reveal">
+        <div class="album-art">
+          <img src="images/background.jpg" alt="Artwork Jatuh Suka — Tulus">
+          <div class="vinyl-mark"></div>
+        </div>
+        <div class="track-info">
+          <div>
+            <span class="eyebrow">Now playing</span>
+            <h3>Jatuh Suka</h3>
+            <p>Tulus</p>
+          </div>
+          <button class="player-button" id="trackPlay" aria-label="Putar Jatuh Suka">▶</button>
+        </div>
+        <div class="progress-row">
+          <span id="currentTime">0:00</span>
+          <input id="seekBar" type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek music">
+          <span id="duration">0:00</span>
+        </div>
+        <div class="player-bottom">
+          <button class="text-control" id="muteBtn" aria-label="Mute">Volume</button>
+          <input id="volumeBar" type="range" min="0" max="1" value="0.8" step="0.01" aria-label="Volume">
+          <span class="quality">MP3 · local</span>
+        </div>
+        <audio id="songAudio" preload="metadata" src="audio/jatuh-suka.mp3"></audio>
+      </div>
+    </section>
+
+    <section class="section video-section" id="video">
+      <div class="section-heading reveal">
+        <span class="eyebrow">09 / Moving memories</span>
+        <h2>A Little Something I Made For You</h2>
+      </div>
+      <div class="video-frame reveal">
+        <video id="birthdayVideo" src="video/birthday.mp4" playsinline muted preload="metadata" controls poster="images/background.jpg"></video>
+      </div>
+    </section>
+
+    <section class="final-section section" id="surprise">
+      <div class="final-card glass reveal" id="finalCard">
+        <span class="eyebrow">10 / One last thing...</span>
+        <h2>One Last Thing...</h2>
+        <p>For Tiqa.</p>
+        <button class="primary-btn" id="surpriseBtn">Open Your Birthday Surprise <span>✦</span></button>
+        <div class="celebration" id="celebration" aria-hidden="true">
+          <div class="celebration-images">
+            <img src="images/cake.png" class="cake" alt="Birthday cake">
+            <img src="images/shark.png" class="shark" alt="Shark plush">
+          </div>
+          <h3>Happy 21st Birthday, Tiqa!</h3>
+          <p>Semoga usia dua puluh satu membawamu pada lebih banyak hari yang membuatmu tersenyum, lebih banyak mimpi yang menemukan jalannya, dan lebih banyak alasan untuk bangga menjadi dirimu sendiri.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-section section" id="closing">
+      <div class="closing-content reveal">
+        <span class="eyebrow">The end, for now</span>
+        <h2>Until The Next Chapter</h2>
+        <p>Semoga halaman-halaman berikutnya berisi hal-hal yang belum pernah kamu bayangkan, tetapi diam-diam selalu kamu harapkan.</p>
+        <div class="closing-rule"></div>
+        <p class="closing-title">Happy Birthday, Tiqa.</p>
+        <span class="closing-date">09.09.2026</span>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
